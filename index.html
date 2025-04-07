@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Agregando el framework-->
     <!--<link rel="stylesheet" href="output.css" />-->
-    <script src="script.js"></script>
+    <script src="scriptt.js"></script>
     <!--Agregando css-->
     <link rel="stylesheet" href="estilos.css" />
     <!--Agregando normalize-->
@@ -47,48 +47,66 @@
     
 
 
-
 	
-  <div class="contenedorCalc">
-    <div class="grid-pantalla">
-      <p id="miBoton" class="pantalla"></p>
+    <div class="contenedorCalc">
+      <div class="grid-pantalla">
+        <p id="miBoton" class="pantalla"></p>
+  
+        <div class="grid" id="pepe">
+        
+        <!--<input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
+        <button class="button-add" onclick="agregarAmigo()">Añadir</button> -->
+        
+        <button type="button"  class="buttons-n">1</button>
+        <button type="button"  class="buttons-n">2</button>
+        <button type="button"  class="buttons-n">3</button>
+        
+        <button type="button"  class="buttons-n">4</button>
+        <button type="button"  class="buttons-n">5</button>
+        <button type="button"  class="buttons-n">6</button>
+        
+        <button type="button"  class="buttons-n">7</button>
+        <button type="button"  class="buttons-n">8</button>
+        <button type="button"  class="buttons-n">9</button>
+        
+        <button type="button"  class="buttons-n">0</button>
+        <button type="button"  class="buttons-n">00</button>
+        <button type="button" onclick='document.getElementById("miBoton").innerHTML = "+"'  class="buttons">+</button>
+  
+        <button type="button" onclick='document.getElementById("miBoton").innerHTML = "-"'  class="buttons">-</button>
+        <button type="button" onclick='document.getElementById("miBoton").innerHTML = "*"'  class="buttons">*</button>
+        <button type="button" onclick='document.getElementById("miBoton").innerHTML = "/"'  class="buttons">/</button>
+  
+        <button type="button" onclick='document.getElementById("miBoton").innerHTML = "."'  class="buttons">.</button>
+        <button type="button" onclick='document.getElementById("miBoton").innerHTML = "="'  class="buttons-i">=</button>
+        <button type="button" onclick='document.getElementById("miBoton").innerHTML = "CE"' class="buttons-b">CE</button>
+      
+      </div> 
 
-      <div class="grid">
-      
-      <!--<input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
-      <button class="button-add" onclick="agregarAmigo()">Añadir</button> -->
-      
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "1"'  class="buttons-n">1</button>
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "2"'  class="buttons-n">2</button>
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "3"'  class="buttons-n">3</button>
-      
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "4"'  class="buttons-n">4</button>
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "5"'  class="buttons-n">5</button>
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "6"'  class="buttons-n">6</button>
-      
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "7"'  class="buttons-n">7</button>
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "8"'  class="buttons-n">8</button>
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "9"'  class="buttons-n">9</button>
-      
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "0"'  class="buttons-n">0</button>
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "00"' class="buttons-n">00</button>
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "+"'  class="buttons">+</button>
-
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "-"'  class="buttons">-</button>
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "*"'  class="buttons">*</button>
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "/"'  class="buttons">/</button>
-
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "."'  class="buttons">.</button>
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "="'  class="buttons-i">=</button>
-      <button type="button" onclick='document.getElementById("miBoton").innerHTML = "CE"'  class="buttons-i">CE</button>
-    
+      <input type="text" id="screen" disabled />
     </div> 
       
     </div>
     
   </div>
 
+  <script>
+    const buttons = document.querySelectorAll('.buttons-n');
+    const screen = document.getElementById('screen'); /*Para reconocer los botones*/
+    let normal = '';
 
+    buttons.forEach(button => {
+      button.addEventListener('click',() => { /*Esto referencia una clase inmediata*/
+      const botonValor = button.innerText;
+      normal += botonValor;
+      screen.value = normal;
+      });
+    });
+
+
+
+
+  </script>
 
   <footer class="footer">
     <div class="container"> <!--De alguna forma el container de arriba ayuda a el container de aajo a quedarse en su lugar-->
