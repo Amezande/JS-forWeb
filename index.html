@@ -90,23 +90,7 @@
     
   </div>
 
-  <script>
-    const buttons = document.querySelectorAll('.buttons-n');
-    const screen = document.getElementById('screen'); /*Para reconocer los botones*/
-    let normal = '';
-
-    buttons.forEach(button => {
-      button.addEventListener('click',() => { /*Esto referencia una clase inmediata*/
-      const botonValor = button.innerText;
-      normal += botonValor;
-      screen.value = normal;
-      });
-    });
-
-
-
-
-  </script>
+ 
 
   <footer class="footer">
     <div class="container"> <!--De alguna forma el container de arriba ayuda a el container de aajo a quedarse en su lugar-->
