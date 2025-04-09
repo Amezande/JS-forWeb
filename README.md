@@ -20,13 +20,6 @@ Desarrollado en colaboración con [Jessiii-mm](https://github.com/Jessiii-mm).
 
 ## 📸 Vista previa
 
-![Calculadora Básica](ruta/de/tu/captura.png)
+![image](https://github.com/user-attachments/assets/75fe3979-d562-4e76-b2ef-4aed12011123)
 
-> *(Reemplaza con una imagen de tu proyecto si lo deseas)*
 
-## 🛠️ Instalación
-
-1. Clona el repositorio:
-
-```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
