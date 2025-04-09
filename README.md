@@ -14,10 +14,6 @@ Desarrollado en colaboración con [Jessiii-mm](https://github.com/Jessiii-mm).
 
 ## 🚀 Tecnologías utilizadas
 
-# Tecnologías Utilizadas
-
-Este proyecto utiliza las siguientes tecnologías:
-
 <p align="left">
   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML" width="40" height="40"/>
