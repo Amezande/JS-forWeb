@@ -1,0 +1,36 @@
+#para1 { /*para poder ponerle esta estructura a lo que tenga el id="para1"*/
+    text-align: center;
+    color: blue;
+  }
+
+  .center {
+    text-align: center;
+    color: red;
+  }
+
+body {
+    background-size: auto;
+    /*background-color: Orange;*/
+    /*background-image: url("paper.gif");/*para poner una imagen de fondo*/
+    /*background-image: url('img_tree.gif'), url('paper.gif');*/
+    /*background-image: radial-gradient(red, green, blue);*/
+    /*background-image: repeating-conic-gradient(red 10%, yellow 20%);*/
+    /*background-image: repeating-linear-gradient(red, yellow 10%, green 20%);*/
+    background-image: radial-gradient(rgb(0, 255, 115), rgb(191, 168, 252), rgb(248, 15, 15));
+}
+
+h1 {
+  color: blueviolet; /* Color de texto*/
+  text-align: center; /* Este es para centrar el texto*/
+  font-size: 50px; /* Tamaño de la letra*/
+  background-color: mediumturquoise; /*Color de fondo*/
+}
+
+p1{
+    border: 2px solid Violet
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
