@@ -1,0 +1,84 @@
+:root{
+    --prim: #131313;
+    --sec: #5e7e52 ;
+    --com: #bbb749 ;
+    --blan: #e0fbac ;
+    --osc: #476926 ;
+    --foo: #191f18;
+    --manguito: #fdff9a;
+    
+}
+.staatliches-regular {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.bubu{
+    padding: 10px 20px;
+  background-color: var(--sec);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}  
+html{
+    background-color: var(--prim);
+    font-family: "Rubik",sans-serif;
+}
+.pres{
+    font-weight: 800;
+    background-color: var(--sec);
+    /*margin : arriba laterales abajo*/
+    margin: -11px -12px -12px ;
+    position: sticky;
+    padding: .9rem;
+    top: 0px;
+}
+.pres1{
+    font-size: 1.2rem;
+    display:inline;
+    /*padding : arriba laterales abajo*/
+    padding: 0rem 1rem 0rem ;
+}
+.link{
+    text-decoration: none;
+    text-decoration: solid;
+    color: var(--manguito);
+}
+.ima-b{
+    border-radius: 13px;
+    transition: .5s ease;
+}
+.ima-b:hover{
+    background-color: #476926;
+}
+.ima-a, .ima-c{
+    padding-left: 1rem;
+}
+.image{
+    border-radius: 10px;
+}
+.containerfoo{
+    
+    width: 100%;
+    padding: 0%;
+}
+.foo{
+    /*margin : arriba laterales abajo*/
+    margin: -11px -12px -12px ;
+    /*padding : arriba laterales abajo*/
+    padding: 2rem 0 2rem 0 ; 
+    display: flex;
+    background-color: var(--foo);
+    color: #b1b3b1;
+    align-items: center;
+}
+.foo-a{
+    flex: 1 1 auto;
+    padding-left: 3rem;
+}
+.foo-b{
+    font-weight: 800;
+    color: var(--manguito);
+}
